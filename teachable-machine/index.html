@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      img {
+        margin-bottom: 1rem;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <script>
+      // More API functions here:
+      // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
+
+      class CatDogClassifier {
+        constructor() {
+          this.model = null;
+          this.maxPredictions = null;
+
+          this.inputField = document.querySelector('#upload-image');
+          this.previewImage = document.querySelector('#preview-image');
+          this.results = document.querySelector('#results');
+
+          this.inputField.addEventListener('change', (e) =>
+            this.showPreview(e)
+          );
+
+          this.loadModel();
+        }
+
+        // load the model and metadata
+        // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
+        // or files from your local hard drive
+        // Note: the pose library adds "tmImage" object to your window (window.tmImage)
+        async loadModel() {
+          const modelURL = './model/model.json';
+          const metadataURL = './model/metadata.json';
+
+          this.model = await window.tmImage.load(modelURL, metadataURL);
+          this.maxPredictions = this.model.getTotalClasses();
+        }
+
+        showPreview(e) {
+          const reader = new FileReader();
+          reader.readAsDataURL(e.target.files[0]);
+          reader.onload = (e) => {
+            this.previewImage.setAttribute('src', e.target.result);
+            this.makePrediction();
+          };
+        }
+
+        // run the image through the model
+        // predict() can take in an image, video or canvas html element
+        async makePrediction() {
+          const prediction = await this.model.predict(this.previewImage);
+
+          for (let i = 0; i < this.maxPredictions; i++) {
+            const result = prediction[i].className;
+            const confidence = prediction[i].probability.toFixed(2);
+
+            this.results.innerHTML += `<li>${result}: ${confidence}</li>`;
+          }
+        }
+      }
+
+      window.onload = () => {
+        const catDogClassifier = new CatDogClassifier();
+      };
+    </script>
+  </head>
+  <body>
+    <img src="" width="300" id="preview-image" />
+
+    <input type="file" accept=".jpg, .jpeg, .png, .gif" id="upload-image" />
+
+    <ul id="results"></ul>
+  </body>
+</html>
