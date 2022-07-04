@@ -16,8 +16,15 @@ Algoritms:
 
 
 
-Transfer learning - the act of taking an existing model (often referred to as a base model), and using it on a similar but different domain
-  - is much faster/easier to train a model than if started from scratch
+Transfer learning - the act of taking an existing model (often referred to as a base model) and using it on a similar but different data set
+  - it's much faster/easier to train a model than like this than to start from scratch
+  - many of the original learnings of the model will carry over to the new info
 
 
+- mobilenet is much smaller (17MB) than other base models (VGG16 - 553MB) but the reduced accuracy difference is negligible
+  - other models are huge due to the many weight parameters (VGG16 - 138 million) vs mobilenet (4.2 million)
+  - the large file size on disk also means greater memory allocation needed to load the huge models
+  - mobilenet and VGG16 were both trained on the imagenet library
+  - mobilenet expects training images that are 224x224
 
+tensorflow.js has performance parity with tensorflow python
