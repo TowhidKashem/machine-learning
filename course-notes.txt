@@ -1,0 +1,23 @@
+
+data set -> fed into algoritm -> produces model that makes predictions
+
+
+features = variables that affect a certain outcome
+label = the outcome
+
+
+2 types of problems:
+  - classification
+  - regression
+
+
+Algoritms:
+  - K-nearest neighbor (knn) - birds of a feather flock together
+
+
+
+Transfer learning - the act of taking an existing model (often referred to as a base model), and using it on a similar but different domain
+  - is much faster/easier to train a model than if started from scratch
+
+
+
