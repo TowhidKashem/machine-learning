@@ -28,3 +28,34 @@ Transfer learning - the act of taking an existing model (often referred to as a 
   - mobilenet expects training images that are 224x224
 
 tensorflow.js has performance parity with tensorflow python
+
+
+---------------------------------------------------
+
+Supervised vs Unsupervised learning:
+
+   - Supervised learning: u have a data set and a list of outcomes, the outcomes determine whether you have a classification or a regression type problem
+
+
+---------------------------------------------------
+
+Regression vs Classification problems:
+
+regression problem outcome values are always numbers, continous vaues (1 - 100, could be $1 or $45.20)
+  e.g. what will be the average home prices this year?
+       how many t-shirts should I produce for my inventory?
+
+classification problem outcome values are classes aka categories, discreet values (yes or no, true or false, cat or dog, etc)
+  e.g. what is this an image of?
+       is this person likely to default on their loan?
+
+
+---------------------------------------------------
+
+Deep Learning - a subfield of machine learning where the algorithms are inspired by the structure of the human brain
+
+Nueral Networks - take in data -> train themselves to recognize the patterns in this data -> predict the output for a new set of similar data
+
+How traning a Nueral Network works - https://youtu.be/bfmFfD2RIcg?t=36
+
+
