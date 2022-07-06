@@ -1,4 +1,3 @@
-
 data set -> fed into algoritm -> produces model that makes predictions
 
 
@@ -21,13 +20,12 @@ Transfer learning - the act of taking an existing model (often referred to as a 
   - many of the original learnings of the model will carry over to the new info
 
 
+
 - mobilenet is much smaller (17MB) than other base models (VGG16 - 553MB) but the reduced accuracy difference is negligible
   - other models are huge due to the many weight parameters (VGG16 - 138 million) vs mobilenet (4.2 million)
   - the large file size on disk also means greater memory allocation needed to load the huge models
   - mobilenet and VGG16 were both trained on the imagenet library
   - mobilenet expects training images that are 224x224
-
-tensorflow.js has performance parity with tensorflow python
 
 
 ---------------------------------------------------
@@ -57,5 +55,30 @@ Deep Learning - a subfield of machine learning where the algorithms are inspired
 Nueral Networks - take in data -> train themselves to recognize the patterns in this data -> predict the output for a new set of similar data
 
 How traning a Nueral Network works - https://youtu.be/bfmFfD2RIcg?t=36
+
+
+---------------------------------------------------
+
+Libraries:
+
+  tensorflow is a low level lib, ml5 is a wrapper around tensorflow which also includes various pre-trained models and it makes using tensorflow easier
+
+  keras is a higher level lib built on top of tensorflow, although it uses tensorflow on the backend it's easier to build nueral networks through keras than directly with tensorflow
+
+  just as Keras is built on top of Tensorflow ml5.js is built on top of Tensorflow.js. It is a high-level library that makes it easier to program neural networks in the browser. With ml5.js you can even gain access to pre-trained models that you can easily load and train
+
+  tensorflow.js has performance parity with tensorflow python
+
+
+---------------------------------------------------
+
+Pre-trained models:
+
+  CocoSSD - object detection and prediction model. This model is able to identify different objects in one image, and come up with a prediction for each of those objects. CocoSSD uses a dataset called Coco, which has labels of 80 different object classes
+
+
+
+
+
 
 
