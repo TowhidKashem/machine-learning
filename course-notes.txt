@@ -74,11 +74,24 @@ Libraries:
 
 Pre-trained models:
 
-  CocoSSD - object detection and prediction model. This model is able to identify different objects in one image, and come up with a prediction for each of those objects. CocoSSD uses a dataset called Coco, which has labels of 80 different object classes
+  CocoSSD 
+    - based on the COCO dataset (common objects in context) - https://cocodataset.org
+    - only detects 80 classes of objects
+    - object detection and prediction model. This model is able to identify different objects in one image, and come up with a prediction for each of those objects. CocoSSD uses a dataset called Coco, which has labels of 80 different object classes
 
 
+  YOLO
 
+---------------------------------------------------
 
+Deep learning algorithms for image classification / recognition:
 
+  - AlexNet
+  - GoogleNet
+  - MobileNet
+  - VGGNet
 
+Famous dataset for image classification:
+
+  - ImageNet (1,000 classes)
 
