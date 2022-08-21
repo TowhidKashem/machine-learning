@@ -84,6 +84,9 @@ Pre-trained models:
 
 ---------------------------------------------------
 
+https://www.youtube.com/watch?v=Gz_PsRRxrHM notes:
+
+
 Deep learning algorithms for image classification / recognition:
 
   - AlexNet
@@ -94,4 +97,16 @@ Deep learning algorithms for image classification / recognition:
 Famous dataset for image classification:
 
   - ImageNet (1,000 classes)
+
+Most deep learning algorithms are trained on 224x224 images
+
+Keras used to be a seperate deep learning python lib but eventually became part of tensorflow
+
+Four steps:
+  1. Create the model
+  2. Train the model
+  3. Test (validate) the model
+  4. Predict
+
+Difference between 3 and 4 is during the 3rd step the learning is "Supervised" aka we provide labels along with the data set
 
