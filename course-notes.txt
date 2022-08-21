@@ -108,5 +108,21 @@ Four steps:
   3. Test (validate) the model
   4. Predict
 
-Difference between 3 and 4 is during the 3rd step the learning is "Supervised" aka we provide labels along with the data set
+Difference between 3 and 4 is during the 3rd step the learning is "Supervised" aka we provide labels along with the data set to teach the model
+
+---------------------------------------------------
+
+Use balanced data sets
+  - try to use balanced data sets whenever possible otherwise the NN will learn bad habits
+    - e.g. if we are making a model to guess dogs vs cats and the data set contains 75% dog pics and 25% cat pics
+      the model will learn very quickly to always pick dogs to be right majority of the time
+
+  - when a data set is imbalanced u can pass weights to account for the difference
+
+Shuffle the data
+  - if we feed the NN all dog pics then all cat pics, first it will learn all animals are dogs then it will "correct" itself 
+    in thinking all animals are cats since both species appears consistently in a row, so shuffle the images randomly before 
+    feeding it to the model
+
+
 
