@@ -1,0 +1,13 @@
+prefix=/Users/tkashem/Desktop/github_repos/machine-learning/env
+exec_prefix=/Users/tkashem/Desktop/github_repos/machine-learning/env
+libdir=/Users/tkashem/Desktop/github_repos/machine-learning/env/lib
+sharedlibdir=/Users/tkashem/Desktop/github_repos/machine-learning/env/lib
+includedir=/Users/tkashem/Desktop/github_repos/machine-learning/env/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.12
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

@@ -1,0 +1,14 @@
+prefix=/Users/tkashem/Desktop/github_repos/machine-learning/env
+exec_prefix=/Users/tkashem/Desktop/github_repos/machine-learning/env
+libdir=/Users/tkashem/Desktop/github_repos/machine-learning/env/lib
+includedir=/Users/tkashem/Desktop/github_repos/machine-learning/env/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 24.0.18
+Requires:
+Requires.private: 
+Libs: -L${libdir} -lfreetype
+Libs.private: -lz -L/Users/tkashem/Desktop/github_repos/machine-learning/env/lib -lpng16 -lz
+Cflags: -I${includedir}/freetype2

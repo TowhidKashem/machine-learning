@@ -1,0 +1,151 @@
+data set -> fed into algoritm -> produces model that makes predictions
+
+
+features = variables that affect a certain outcome
+label = the outcome
+
+
+2 types of problems:
+  - classification
+  - regression
+
+
+Algoritms:
+  - K-nearest neighbor (knn) - birds of a feather flock together
+
+
+
+Transfer learning - the act of taking an existing model (often referred to as a base model) and using it on a similar but different data set
+  - it's much faster/easier to train a model than like this than to start from scratch
+  - many of the original learnings of the model will carry over to the new info
+
+
+
+- mobilenet is much smaller (17MB) than other base models (VGG16 - 553MB) but the reduced accuracy difference is negligible
+  - other models are huge due to the many weight parameters (VGG16 - 138 million) vs mobilenet (4.2 million)
+  - the large file size on disk also means greater memory allocation needed to load the huge models
+  - mobilenet and VGG16 were both trained on the imagenet library
+  - mobilenet expects training images that are 224x224
+
+
+---------------------------------------------------
+
+Supervised vs Unsupervised learning:
+
+   - Supervised learning: u have a data set and a list of outcomes, the outcomes determine whether you have a classification or a regression type problem
+
+
+---------------------------------------------------
+
+Regression vs Classification problems:
+
+regression problem outcome values are always numbers, continous vaues (1 - 100, could be $1 or $45.20)
+  e.g. what will be the average home prices this year?
+       how many t-shirts should I produce for my inventory?
+
+classification problem outcome values are classes aka categories, discreet values (yes or no, true or false, cat or dog, etc)
+  e.g. what is this an image of?
+       is this person likely to default on their loan?
+
+
+---------------------------------------------------
+
+Deep Learning - a subfield of machine learning where the algorithms are inspired by the structure of the human brain
+
+Nueral Networks - take in data -> train themselves to recognize the patterns in this data -> predict the output for a new set of similar data
+
+How traning a Nueral Network works - https://youtu.be/bfmFfD2RIcg?t=36
+
+
+---------------------------------------------------
+
+Libraries:
+
+  tensorflow is a low level lib, ml5 is a wrapper around tensorflow which also includes various pre-trained models and it makes using tensorflow easier
+
+  keras is a higher level lib built on top of tensorflow, although it uses tensorflow on the backend it's easier to build nueral networks through keras than directly with tensorflow
+
+  just as Keras is built on top of Tensorflow ml5.js is built on top of Tensorflow.js. It is a high-level library that makes it easier to program neural networks in the browser. With ml5.js you can even gain access to pre-trained models that you can easily load and train
+
+  tensorflow.js has performance parity with tensorflow python
+
+
+---------------------------------------------------
+
+Pre-trained models:
+
+  CocoSSD 
+    - based on the COCO dataset (common objects in context) - https://cocodataset.org
+    - only detects 80 classes of objects
+    - object detection and prediction model. This model is able to identify different objects in one image, and come up with a prediction for each of those objects. CocoSSD uses a dataset called Coco, which has labels of 80 different object classes
+
+
+  YOLO
+
+---------------------------------------------------
+
+https://www.youtube.com/watch?v=Gz_PsRRxrHM notes:
+
+
+Deep learning algorithms for image classification / recognition:
+
+  - AlexNet
+  - GoogleNet
+  - MobileNet
+  - VGGNet
+
+Famous dataset for image classification:
+
+  - ImageNet (1,000 classes)
+
+Most deep learning algorithms are trained on 224x224 images
+
+Keras used to be a seperate deep learning python lib but eventually became part of tensorflow
+
+Four steps:
+  1. Create the model
+  2. Train the model
+  3. Test (validate) the model
+  4. Predict
+
+Difference between 3 and 4 is during the 3rd step the learning is "Supervised" aka we provide labels along with the data set to teach the model
+
+---------------------------------------------------
+
+Use balanced data sets
+  - try to use balanced data sets whenever possible otherwise the NN will learn bad habits
+    - e.g. if we are making a model to guess dogs vs cats and the data set contains 75% dog pics and 25% cat pics
+      the model will learn very quickly to always pick dogs to be right majority of the time
+
+  - when a data set is imbalanced u can pass weights to account for the difference
+
+Shuffle the data
+  - if we feed the NN all dog pics then all cat pics, first it will learn all animals are dogs then it will "correct" itself 
+    in thinking all animals are cats since both species appears consistently in a row, so shuffle the images randomly before 
+    feeding it to the model
+
+---------------------------------------------------
+
+Udemy course:
+
+Training vs Validation vs Testing:
+
+  All experiments should be conducted on different portions of your data.
+
+  Training data set — Use this set for model training, 70–80% of your data is the standard.
+
+  Validation/development data set — Use this set for model hyperparameter tuning and experimentation evaluation, 10–15% of your data is the standard.
+
+  Test data set — Use this set for model testing and comparison, 10–15% of your data is the standard.
+
+
+Overfitting vs Underfitting:
+
+  Poor performance on training data means the model hasn’t learned properly and is underfitting. Try a different model, improve the existing one through hyperparameter or collect more data.
+
+  Great performance on the training data but poor performance on test data means your model doesn’t generalize well. Your model may be overfitting the training data. Try using a simpler model or making sure your the test data is of the same style your model is training on.
+  
+  Another form of overfitting can come in the form of better performance on test data than training data. This may mean your testing data is leaking into your training data (incorrect data splits) or you've spent too much time optimizing your model for the test set data. Ensure your training and test datasets are kept separate at all times and avoid optimizing a models performance on the test set (use the training and validation sets for model improvement).
+
+  Poor performance once deployed (in the real world) means there’s a difference in what you trained and tested your model on and what is actually happening. Ensure the data you're using during experimentation matches up with the data you're using in production.
+
