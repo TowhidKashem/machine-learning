@@ -26,4 +26,14 @@ Anaconda commands:
     > y
     > conda deactivate
 
+  Export conda envioronment as yaml file:
+
+    > conda env export --prefix /Users/tkashem/Desktop/github_repos/machine-learning/env > environment.yml
+
+  Create an envioronment from yaml file called "sample_project":
+
+    > conda env create --file environment.yml --name sample_project
+
+
+
 
