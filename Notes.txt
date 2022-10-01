@@ -26,6 +26,10 @@ Anaconda commands:
     > y
     > conda deactivate
 
+  Delete conda envioronment:
+
+    > conda env remove -n <PROJECT_NAME>
+
   Export conda envioronment as yaml file:
 
     > conda env export --prefix /Users/tkashem/Desktop/github_repos/machine-learning/env > environment.yml
