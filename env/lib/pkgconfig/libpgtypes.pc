@@ -1,0 +1,9 @@
+Name: libpgtypes
+Description: PostgreSQL libpgtypes library
+Url: http://www.postgresql.org/
+Version: 12.9
+Requires: 
+Requires.private: 
+Cflags: -I/Users/tkashem/Desktop/github_repos/machine-learning/env/include
+Libs: -L/Users/tkashem/Desktop/github_repos/machine-learning/env/lib -lpgtypes
+Libs.private: -L/Users/tkashem/Desktop/github_repos/machine-learning/env/lib -lpgcommon -lpgport -lm

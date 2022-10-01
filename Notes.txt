@@ -1,2 +1,29 @@
-> conda create --prefix ./env pandas numpy matplotlib scikit-learn
+Anaconda commands:
+
+  Create a new conda envioronment with specific packages:
+
+    > conda create --prefix ./env pandas numpy matplotlib scikit-learn
+
+  Activate the envioronment (must include full path):
+
+    > conda activate /Users/tkashem/Desktop/github_repos/machine-learning/env
+
+  Show all conda envioronments:
+
+    > conda env list
+
+  Install specific package:
+
+    > conda install jupyter
+
+  Start jupyter notebook:
+
+    > jupyter notebook
+
+  Shutdown conda envioronment:
+
+    > CNTRL + C
+    > y
+    > conda deactivate
+
 

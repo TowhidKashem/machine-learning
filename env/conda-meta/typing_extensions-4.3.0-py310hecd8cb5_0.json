@@ -1,0 +1,109 @@
+{
+  "build": "py310hecd8cb5_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.10,<3.11.0a0"
+  ],
+  "extracted_package_dir": "/Users/tkashem/opt/miniconda3/pkgs/typing_extensions-4.3.0-py310hecd8cb5_0",
+  "features": "",
+  "files": [
+    "lib/python3.10/site-packages/__pycache__/typing_extensions.cpython-310.pyc",
+    "lib/python3.10/site-packages/typing_extensions-4.3.0.dist-info/INSTALLER",
+    "lib/python3.10/site-packages/typing_extensions-4.3.0.dist-info/LICENSE",
+    "lib/python3.10/site-packages/typing_extensions-4.3.0.dist-info/METADATA",
+    "lib/python3.10/site-packages/typing_extensions-4.3.0.dist-info/RECORD",
+    "lib/python3.10/site-packages/typing_extensions-4.3.0.dist-info/REQUESTED",
+    "lib/python3.10/site-packages/typing_extensions-4.3.0.dist-info/WHEEL",
+    "lib/python3.10/site-packages/typing_extensions-4.3.0.dist-info/direct_url.json",
+    "lib/python3.10/site-packages/typing_extensions.py"
+  ],
+  "fn": "typing_extensions-4.3.0-py310hecd8cb5_0.conda",
+  "legacy_bz2_md5": "bf6d2cb0a92a949f25acc3effe9cba2f",
+  "license": "PSF-2.0",
+  "license_family": "PSF",
+  "link": {
+    "source": "/Users/tkashem/opt/miniconda3/pkgs/typing_extensions-4.3.0-py310hecd8cb5_0",
+    "type": 1
+  },
+  "md5": "756c8b2ab53871d5275880f99fd15d48",
+  "name": "typing_extensions",
+  "package_tarball_full_path": "/Users/tkashem/opt/miniconda3/pkgs/typing_extensions-4.3.0-py310hecd8cb5_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.10/site-packages/__pycache__/typing_extensions.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "2909443d3a037322584ab7df162cbc1ed342047fc9656dbf465bdb0f2b50e1e2",
+        "sha256_in_prefix": "2909443d3a037322584ab7df162cbc1ed342047fc9656dbf465bdb0f2b50e1e2",
+        "size_in_bytes": 60639
+      },
+      {
+        "_path": "lib/python3.10/site-packages/typing_extensions-4.3.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.10/site-packages/typing_extensions-4.3.0.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "ff17ce94e102024deb68773eb1cc74ca76da4e658f373531f0ac22d68a6bb1ad",
+        "sha256_in_prefix": "ff17ce94e102024deb68773eb1cc74ca76da4e658f373531f0ac22d68a6bb1ad",
+        "size_in_bytes": 12755
+      },
+      {
+        "_path": "lib/python3.10/site-packages/typing_extensions-4.3.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "19cd7cd9209a6373d7a2749fd61742292f4d184d102e8067c524bd57d5423889",
+        "sha256_in_prefix": "19cd7cd9209a6373d7a2749fd61742292f4d184d102e8067c524bd57d5423889",
+        "size_in_bytes": 6350
+      },
+      {
+        "_path": "lib/python3.10/site-packages/typing_extensions-4.3.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "da81362d4664ad3c30eba5472cc397b16867339ff550bfbab908bed467695584",
+        "sha256_in_prefix": "da81362d4664ad3c30eba5472cc397b16867339ff550bfbab908bed467695584",
+        "size_in_bytes": 769
+      },
+      {
+        "_path": "lib/python3.10/site-packages/typing_extensions-4.3.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.10/site-packages/typing_extensions-4.3.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "e137ca201ff1bbed386dcda22b3ebfcc5b7e80414410353fdf51c686acce084f",
+        "sha256_in_prefix": "e137ca201ff1bbed386dcda22b3ebfcc5b7e80414410353fdf51c686acce084f",
+        "size_in_bytes": 81
+      },
+      {
+        "_path": "lib/python3.10/site-packages/typing_extensions-4.3.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "442762d644d3e57fbc312bdf465ef8025c203c202a09f78b96ee16e659a306fa",
+        "sha256_in_prefix": "442762d644d3e57fbc312bdf465ef8025c203c202a09f78b96ee16e659a306fa",
+        "size_in_bytes": 156
+      },
+      {
+        "_path": "lib/python3.10/site-packages/typing_extensions.py",
+        "path_type": "hardlink",
+        "sha256": "b99f795365cfd2e542e920fa3a132cb293f1522ec768b5c122e94fe7c2265830",
+        "sha256_in_prefix": "b99f795365cfd2e542e920fa3a132cb293f1522ec768b5c122e94fe7c2265830",
+        "size_in_bytes": 75384
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "153bc62e9ef50a0b324c8944e2b90d2dda0c862beec43c16702a1a691c9b76fd",
+  "size": 43536,
+  "subdir": "osx-64",
+  "timestamp": 1659638915292,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-64/typing_extensions-4.3.0-py310hecd8cb5_0.conda",
+  "version": "4.3.0"
+}
