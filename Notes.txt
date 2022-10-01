@@ -38,6 +38,3 @@ Anaconda commands:
 
     > conda env create --file environment.yml --name sample_project
 
-
-
-
