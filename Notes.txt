@@ -4,11 +4,11 @@ Anaconda commands:
 
     > conda create --prefix ./env pandas numpy matplotlib scikit-learn
 
-  Activate the envioronment (must include full path):
+  Activate the environment (must include full path):
 
     > conda activate /Users/tkashem/Desktop/github_repos/machine-learning/env
 
-  Show all conda envioronments:
+  Show all conda environments:
 
     > conda env list
 
