@@ -20,3 +20,11 @@ Real-world example:
     - if 2 segments have a *** LOW VARIANCE *** then they must be of the same thing e.g. trees
 
 
+
+Numpy:
+  - makes working with arrays and matrices easy and efficient (numpy array methods are much faster than standard python methods)
+  - pandas, matplotlib and scikitlearn all use numpy as a dependency
+  - the central data structure in numpy is the ndarray (N-Dimensional Array). Named for supporting any number (n) of dimensions
+  - dealing with a new dimension is just adding a comma to the parameters of a numpy function
+
+
