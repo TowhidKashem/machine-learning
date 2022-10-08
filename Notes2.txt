@@ -1,25 +1,31 @@
+1. Variance = measure of the average degree to which each number is different from the mean
 
-Variance = measure of the average degree to which each number is different from the mean
+    Higher Variance = wider range of numbers
+    Lower Variance = lower range of numbers
 
-Higher Variance = wider range of numbers
-Lower Variance = lower range of numbers
+    > numpy.var(<np_array>)
 
-> numpy.var(<np_array>)
+2. Standard Deviation = measure of how spread out a group of numbers is from the mean
+    - The SQ Root = Standard Deviation
 
-Standard Deviation = measure of how spread out a group of numbers is from the mean
-  - The SQ Root = Standard Deviation
-
-> numpy.std(<np_array>)
-
-Real-world example:
-
-  To detect trees in images:
-    - we take an image and use the `matplotlib.image.imread()` method to load it as a numpy array
-    - this multidimensional array stores numeric values at each index which represents the RGB (red, green, blue) values of each pixel
-    - by analyzing 2 images and checking the *** VARIANCE *** of each array segment we can find similar images
-    - if 2 segments have a *** LOW VARIANCE *** then they must be of the same thing e.g. trees
+    > numpy.std(<np_array>)
 
 
+    Real-world example:
+
+      To detect trees in images:
+        - we take an image and use the `matplotlib.image.imread()` method to load it as a numpy array
+        - this multidimensional array stores numeric values at each index which represents the RGB (red, green, blue) values of each pixel
+        - by analyzing 2 images and checking the *** VARIANCE *** of each array segment we can find similar images
+        - if 2 segments have a *** LOW VARIANCE *** then they must be of the same thing e.g. trees
+
+
+3. Normal Distribution (aka Gaussian distribution) = says that data near the mean are more frequent in occurrence than data far from the mean
+
+4. Outlier = a data point that is distant from the norm (about 3 standard deviations away)
+
+
+------
 
 Numpy:
   - makes working with arrays and matrices easy and efficient (numpy array methods are much faster than standard python methods)
@@ -28,31 +34,41 @@ Numpy:
   - dealing with a new dimension is just adding a comma to the parameters of a numpy function
 
 
-----------
+Matplotlib:
+  - histogram graphs are great for visualizing the spread of data
+
+
+------
+
+TOOLS SUMMARY:
 
 1. Pandas (dataframes):
-  - create graphs from dataframes:
+  - create tables from dataframes:
 
       car_dealership = pd.DataFrame({
         'models': pd.Series(['Honda', 'Toyota', 'Mercedes']),
         'colors': pd.Series(['red', 'blue', 'green'])
       })
 
-- columns of the graph are the `keys` of the dataframe and the rows are series `values`
+- columns of the table are the `keys` of the dataframe and the rows are series `values`
   - dataframes = dictionaries
   - series = lists
-- create dataframes by loading csv files `pd.read_csv(...)`
+- can also create dataframes from csv files `pd.read_csv(...)`
 
 
 2. Numpy = (ndarrays / matrices):
-  - run mathematical operations between different numbers in a matrix
+  - run mathematical operations between different numbers in an array matrix
   - data comparison and analysis
   - find the standard deviation/variance/mean/sum etc
   - load an image into a ndarray
     - each pixel is a value in the ndarray containing a numeric value for the RGB contents of the pixel
-    - check for patterns against other images to find similar items e.g. trees
 
 
 3. Matplotlib (data visualization):
-  - create graphs
+  - create graphs aka plots
+  - pyplot vs matplotlib object orientated methods:
+    - these are the 2 ways to make plots, use the object orientated method (it's better/recomended in official docs)
+    - pyplot is ok to use for quick checks but for final graphs use the latter
+
+
 
