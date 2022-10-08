@@ -28,3 +28,31 @@ Numpy:
   - dealing with a new dimension is just adding a comma to the parameters of a numpy function
 
 
+----------
+
+1. Pandas (dataframes):
+  - create graphs from dataframes:
+
+      car_dealership = pd.DataFrame({
+        'models': pd.Series(['Honda', 'Toyota', 'Mercedes']),
+        'colors': pd.Series(['red', 'blue', 'green'])
+      })
+
+- columns of the graph are the `keys` of the dataframe and the rows are series `values`
+  - dataframes = dictionaries
+  - series = lists
+- create dataframes by loading csv files `pd.read_csv(...)`
+
+
+2. Numpy = (ndarrays / matrices):
+  - run mathematical operations between different numbers in a matrix
+  - data comparison and analysis
+  - find the standard deviation/variance/mean/sum etc
+  - load an image into a ndarray
+    - each pixel is a value in the ndarray containing a numeric value for the RGB contents of the pixel
+    - check for patterns against other images to find similar items e.g. trees
+
+
+3. Matplotlib (data visualization):
+  - create graphs
+
