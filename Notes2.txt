@@ -1,0 +1,22 @@
+
+Variance = measure of the average degree to which each number is different from the mean
+
+Higher Variance = wider range of numbers
+Lower Variance = lower range of numbers
+
+> numpy.var(<np_array>)
+
+Standard Deviation = measure of how spread out a group of numbers is from the mean
+  - The SQ Root = Standard Deviation
+
+> numpy.std(<np_array>)
+
+Real-world example:
+
+  To detect trees in images:
+    - we take an image and use the `matplotlib.image.imread()` method to load it as a numpy array
+    - this multidimensional array stores numeric values at each index which represents the RGB (red, green, blue) values of each pixel
+    - by analyzing 2 images and checking the variance of each array segment we can find similar images
+    - if 2 segments have a low variance then they must be of the same thing e.g. trees
+
+
