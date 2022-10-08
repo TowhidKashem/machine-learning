@@ -1,0 +1,40 @@
+Anaconda commands:
+
+  Create a new conda envioronment with specific packages:
+
+    > conda create --prefix ./env pandas numpy matplotlib scikit-learn
+
+  Activate the environment (must include full path):
+
+    > conda activate /Users/tkashem/Desktop/github_repos/machine-learning/env
+
+  Show all conda environments:
+
+    > conda env list
+
+  Install specific package:
+
+    > conda install jupyter
+
+  Start jupyter notebook:
+
+    > jupyter notebook
+
+  Shutdown conda envioronment:
+
+    > CNTRL + C
+    > y
+    > conda deactivate
+
+  Delete conda envioronment:
+
+    > conda env remove -n <PROJECT_NAME>
+
+  Export conda envioronment as yaml file:
+
+    > conda env export --prefix /Users/tkashem/Desktop/github_repos/machine-learning/env > environment.yml
+
+  Create an envioronment from yaml file called "sample_project":
+
+    > conda env create --file environment.yml --name sample_project
+

@@ -1,40 +1,22 @@
-Anaconda commands:
 
-  Create a new conda envioronment with specific packages:
+Variance = measure of the average degree to which each number is different from the mean
 
-    > conda create --prefix ./env pandas numpy matplotlib scikit-learn
+Higher Variance = wider range of numbers
+Lower Variance = lower range of numbers
 
-  Activate the environment (must include full path):
+> numpy.var(<np_array>)
 
-    > conda activate /Users/tkashem/Desktop/github_repos/machine-learning/env
+Standard Deviation = measure of how spread out a group of numbers is from the mean
+  - The SQ Root = Standard Deviation
 
-  Show all conda environments:
+> numpy.std(<np_array>)
 
-    > conda env list
+Real-world example:
 
-  Install specific package:
+  To detect trees in images:
+    - we take an image and use the `matplotlib.image.imread()` method to load it as a numpy array
+    - this multidimensional array stores numeric values at each index which represents the RGB (red, green, blue) values of each pixel
+    - by analyzing 2 images and checking the *** VARIANCE *** of each array segment we can find similar images
+    - if 2 segments have a *** LOW VARIANCE *** then they must be of the same thing e.g. trees
 
-    > conda install jupyter
-
-  Start jupyter notebook:
-
-    > jupyter notebook
-
-  Shutdown conda envioronment:
-
-    > CNTRL + C
-    > y
-    > conda deactivate
-
-  Delete conda envioronment:
-
-    > conda env remove -n <PROJECT_NAME>
-
-  Export conda envioronment as yaml file:
-
-    > conda env export --prefix /Users/tkashem/Desktop/github_repos/machine-learning/env > environment.yml
-
-  Create an envioronment from yaml file called "sample_project":
-
-    > conda env create --file environment.yml --name sample_project
 
