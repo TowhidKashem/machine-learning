@@ -1,0 +1,30 @@
+1. Traditional Machine Learning
+  - is more manual
+  - the engineer does feature extraction and tries to find patterns in the data before feeding it into the model
+  - then the model does the classification or regression work
+  - example lib: scikit learn
+
+
+2. Deep Learning
+  - the machine does both feature extraction and regression/classification work
+  - example lib: tensorflow / keras
+
+------
+
+Model
+  - simply a function that the computer writes (instead of the engineer) to do some work
+  - to come up with the model we give the computer some input and labeled output (to check it's answers)
+
+
+2 types of models/problems:
+  - classification e.g. detect the dog breed
+  - regression e.g. predict housing prices for the next year
+
+
+sample = row in a table
+
+hyper parameters
+  - little knobs on the model that can be tweaked and dialed to get better results
+  - this process is known as parameter optimization
+
+

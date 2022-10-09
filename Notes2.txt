@@ -70,5 +70,3 @@ TOOLS SUMMARY:
     - these are the 2 ways to make plots, use the object orientated method (it's better/recomended in official docs)
     - pyplot is ok to use for quick checks but for final graphs use the latter
 
-
-
