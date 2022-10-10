@@ -27,4 +27,17 @@ hyper parameters
   - little knobs on the model that can be tweaked and dialed to get better results
   - this process is known as parameter optimization
 
+------
+
+Libraries:
+
+1. Tensorflow:
+  - low level AI framework
+  - can be used for many things but usually used for traning deep nueral networks
+  - a tensor is a multidimensional array that holds an immutable value (like numbers)
+
+
+2. Keras
+  - is a higher level nueral network framework/API using Tensorflow
+
 
