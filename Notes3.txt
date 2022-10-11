@@ -31,13 +31,27 @@ hyper parameters
 
 Libraries:
 
-1. Tensorflow:
-  - low level AI framework
+1. Tensorflow
+  - low level AI framework developed by Google
   - can be used for many things but usually used for traning deep nueral networks
   - a tensor is a multidimensional array that holds an immutable value (like numbers)
+  - used for high performance models working on large datasets, difficult to debug
+  - hard to develop in directly, usually only used on it's own in research work
 
 
 2. Keras
-  - is a higher level nueral network framework/API using Tensorflow
+  - is a higher level nueral network framework/API
+  - is a wrapper for Tensorflow
+  - can be used to quickly build and deploy deep NN
+  - used for smaller models working on smaller datasets, easy to debug
+  - high level of abstraction makes it easy to develop in for new comers
+
+
+3. Pytorch
+  - low level API developed by Facebook
+  - for natural language processing computer vision
+  - is a more powerful version of NumPy
+  - used for high performance models working on large datasets, easier to debug than both keras and tensorflow
+  - easier to develop in than tensorflow but harder than keras
 
 
