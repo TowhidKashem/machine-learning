@@ -7,7 +7,7 @@
 
 2. Deep Learning
   - the machine does both feature extraction and regression/classification work
-  - example lib: tensorflow / keras
+  - example libs: tensorflow / keras
 
 ------
 
@@ -49,7 +49,7 @@ Libraries:
 
 3. Pytorch
   - low level API developed by Facebook
-  - for natural language processing computer vision
+  - for natural language processing and computer vision
   - is a more powerful version of NumPy
   - used for high performance models working on large datasets, easier to debug than both keras and tensorflow
   - easier to develop in than tensorflow but harder than keras

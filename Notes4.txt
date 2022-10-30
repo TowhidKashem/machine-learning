@@ -1,10 +1,25 @@
 Split data into 3 sets:
-  1. Training set - this is the course material
+  1. Training set   - this is the course material
   2. Validation set - this is the practise quiz
-  3. Test set - this is the final exam
+  3. Test set       - this is the final exam
+
+-------------------------------------
+
+End to end process for making an image classification model in Tensorflow:
+
+  Step 1 - Data exploration
+            - check out the images and labels
+              - how many total images are there?
+              - how many total labels are there?
+              - how many images per label on average?
+              - do the number of images match the number of labels?
+
+  Step 2 - Data preperation
+            - crop the images to 224x224 pixels
+            - convert labels and images into numpy arrays
+            - create functions for converting label and image numpy arrays into tensors
+            - create functions for grouping label and image tensors into batches (32 image/label tensor pairs per batch)
+            - split data into TRAINING, VALIDATION and TESTING sets
 
 
-Google Colab:
-  If you want to use a large dataset in Google Colab you should use `tf.data.Dataset` for preparing it before training to avoid hitting limits.
-  If you want to use GPUs you can use any TF version. But for TPU I would recommend using TF1.14.
-
+-------------------------------------
