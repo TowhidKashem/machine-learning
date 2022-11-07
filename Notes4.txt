@@ -1,4 +1,5 @@
 Split data into 3 sets:
+
   1. Training set   - this is the course material
   2. Validation set - this is the practise quiz
   3. Test set       - this is the final exam
@@ -23,3 +24,11 @@ End to end process for making an image classification model in Tensorflow:
 
 
 -------------------------------------
+
+Keras sequential vs functional apis
+
+While a model is training it's LOSS should go down and it's ACCURACY should go up
+
+Overfitting = when a model performs better on the training data set than on the validation data set
+
+Overfitting as the BEGINNING is a good thing, it means the model is learning
