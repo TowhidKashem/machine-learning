@@ -32,3 +32,5 @@ While a model is training it's LOSS should go down and it's ACCURACY should go u
 Overfitting = when a model performs better on the training data set than on the validation data set
 
 Overfitting as the BEGINNING is a good thing, it means the model is learning
+
+For multi-class classification problems use "Softmax" activation, for binary classification use "Sigmoid"
