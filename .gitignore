@@ -1,6 +1,12 @@
 1
 .DS_Store
-node_modules/
-__pycache__/
-.ipynb_checkpoints/
-env/
+env
+node_modules
+__pycache__
+*.ipynb_checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+*.pkl
+*.joblib
+data/bluebook_for_bulldozers
+notebook-playground.ipynb
